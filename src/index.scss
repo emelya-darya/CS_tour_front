@@ -1,0 +1,64 @@
+@import './src/assets/styles/_normalize';
+@import './src/assets/styles/_fonts';
+
+body {
+  margin: 0;
+  font-family: 'Lato', Helvetica, sans-serif;
+  font-size: 20px;
+  width: 100vw;
+  overflow-x: hidden;
+  line-height: 1.4;
+
+  @media(max-width: 768px) {
+    font-size: 17px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+// header {
+//   position: fixed;
+// }
+
+header,
+footer {
+  flex: 0 1 auto;
+}
+
+main {
+  flex: 1 0 auto;
+  padding: 35px 0px;
+  // padding-top: 130px;
+
+  @media(min-width: 992px) {
+    padding-top: 35px;
+  }
+}
+
+[class*="__container"] {
+  max-width: 1400px;
+  padding: 0px 12px;
+  margin: 0px auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 35px;
+
+  @media(max-width:768px) {
+    font-size: 25px;
+  }
+}

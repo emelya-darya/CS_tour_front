@@ -1,0 +1,62 @@
+@import '../../../assets/styles/_vars';
+
+.container h1,
+.container h2 {
+    margin-bottom: 30px;
+}
+
+.membersWrapper{
+    margin-bottom: 70px;
+}
+
+table.members_table_list {
+    width: 100%;
+    border: 1px solid #000;
+        border-collapse: collapse;
+    @media(max-width: 768px) {
+        display: none;
+    }
+
+    tr:nth-child(even) {
+        background-color: rgba($color: $blue_clr, $alpha: .1);
+    }
+    
+    tr:nth-child(1) {
+        background-color: $blue_clr;
+        color: #fff;
+    
+        td {
+            padding: 10px 15px;
+            font-weight: 700;
+        }
+    }
+    td {
+        border: 1px solid #000;
+        border-collapse: collapse;
+    }
+    td {
+        text-align: center;
+        padding: 7px 15px;
+    }
+    td.number {
+        font-weight: 700;
+    }
+}
+
+ol.members_ol_list {
+    font-weight: 700;
+    padding-left: 25px;
+    list-style-type: decimal;
+
+    @media(min-width: 768px) {
+        display: none;
+    }
+
+    .li_value {
+        font-weight: 400;
+    }
+
+    li:not(:last-child) {
+        margin-bottom: 18px;
+    }
+}

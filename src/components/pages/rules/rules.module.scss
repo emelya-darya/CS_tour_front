@@ -1,0 +1,40 @@
+.container {
+    ol li {
+        font-weight: 800;
+        //padding: 10px 10px 10px 15px;
+    }
+
+    ol li:not(:last-child){
+        margin-bottom: 12px;
+    }
+
+    ol li span {
+        font-weight: 400;
+    }
+    
+    ol {
+        margin-bottom: 50px;
+    }
+
+
+    h2{
+        font-size: 25px;
+    }
+
+    ul {
+        list-style: square outside;
+        margin-bottom: 30px;
+    }
+
+    ul li:not(:last-child){
+        margin-bottom: 12px;
+    }
+
+    .errorText{
+        color: #d52d30;
+        font-weight: 700;
+    }
+
+
+}
+
